@@ -1,6 +1,6 @@
 /*
 Purpose:
-    Retrieve the top 15 Data Analyst job postings in Canada by average yearly salary.
+    Retrieve the top 15 Machine Learning job postings in Canada by average yearly salary.
 
 Inputs:
     - job_postings_fact:
@@ -10,7 +10,7 @@ Inputs:
             company_id, name (joined to provide company_name)
 Parameters / Filters:
     - job_location LIKE '%Canada%'
-    - job_title_short LIKE '%Data Analyst%'
+    - job_title_short LIKE '%Machine Learning%'
     - salary_year_avg IS NOT NULL
 
 Main operations:
@@ -39,19 +39,14 @@ select
     job_schedule_type,
     salary_year_avg,
     job_posted_date
-
 from 
     job_postings_fact
-
 left join company_dim on job_postings_fact.company_id = company_dim.company_id
-
 where 
     job_location like '%Canada%' 
 and 
     job_title like '%Machine Learning%'
 and 
     salary_year_avg is not null 
-
  ORDER BY salary_year_avg DESC
-
 LIMIT 15;   
