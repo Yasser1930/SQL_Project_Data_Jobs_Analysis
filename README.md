@@ -1,4 +1,4 @@
-# 📊 Canadian Machine Learning Job Market Analysis
+# Canadian Machine Learning Job Market Analysis
 
 ## 1. Introduction
 
@@ -74,7 +74,7 @@ SQL_Project_Data_Jobs_Analysis
 The analysis is based on a star-like schema built from a real-world job posting dataset.
 
 📁 Dataset Source (CSV Files):  
-🔗 https://drive.google.com/drive/folders/1moeWYoUtUklJO6NJdWo9OV8zWjRn0rjN?usp=sharing
+🔗 https://drive.google.com/file/d/1KZmnzNo3EKnbpSuQCTVMPT6F3osVue5h/view?usp=drive_link
 
 The database tables include:
 
@@ -346,7 +346,7 @@ This project sharpened my SQL and analytical thinking while uncovering what trul
 
 ---
 
-## 9. ▶️ How to Reproduce
+## 9. How to Reproduce
 
 ### Run SQL Analysis
 1. Load CSV files into PostgreSQL
